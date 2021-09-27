@@ -1,0 +1,26 @@
+{
+  "name": "@kne/view-render-sync",
+  "version": "0.2.3",
+  "description": "同步view-render的配置到数据库",
+  "bin": {
+    "view-render-sync": "./bin/render-sync.js"
+  },
+  "files": [
+    "bin"
+  ],
+  "scripts": {
+    "init": "npm install && cd example && npm install"
+  },
+  "author": "linzp",
+  "license": "ISC",
+  "dependencies": {
+    "chokidar": "^3.5.2",
+    "fs-extra": "^10.0.0",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "axios": "^0.21.4",
+    "husky": "^7.0.2",
+    "lint-staged": "^11.1.2"
+  }
+}

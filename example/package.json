@@ -1,0 +1,26 @@
+{
+  "name": "view-render-sync-example",
+  "version": "0.0.0",
+  "private": true,
+  "description": "同步view-render的配置到数据库",
+  "main": "index.js",
+  "scripts": {
+    "test": "lint-staged"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.json": "view-render-sync"
+  },
+  "author": "linzp",
+  "license": "ISC",
+  "dependencies": {
+    "@kne/view-render-sync": "file:..",
+    "lint-staged": "file:../node_modules/lint-staged",
+    "husky": "file:../node_modules/husky",
+    "axios": "file:../node_modules/axios"
+  }
+}
