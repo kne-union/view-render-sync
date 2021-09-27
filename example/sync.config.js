@@ -1,7 +1,3 @@
-const axios = require('axios');
-
-let cookies;
-
 module.exports = {
     basDir: 'src/',
     targetDir: '/talent-view',
